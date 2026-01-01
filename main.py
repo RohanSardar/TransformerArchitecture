@@ -10,7 +10,7 @@ if __name__ == "__main__":
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Running on: {device}")
 
-    CSV_FILE = data.csv
+    CSV_FILE = 'data.csv'
     
     csv_data = []
     with open(CSV_FILE, mode='r', newline='', encoding='utf-8') as f:
@@ -147,3 +147,4 @@ if __name__ == "__main__":
         print(f"Input {i+1}: {sentence}")
         print(f"Output {i+1}: {translation}")
         print()
+
