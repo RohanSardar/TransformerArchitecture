@@ -13,7 +13,7 @@ This repository contains a PyTorch implementation of the Transformer model, buil
 
 ### Prerequisites
 
-- Python 3.x
+- Python 3.13.x
 - **PyTorch**: This is the main dependency. CUDA is recommended for faster training. You can install it via pip:
 
 For CPU only:
@@ -89,3 +89,4 @@ The hyperparameters are significantly lowered compared to the original ["Attenti
 - **Overfitting**: A large model (millions of parameters) would memorize the small dataset instantly but fail to generalize.
 - **Speed**: Smaller dimensions (`embed_size=64`) allow for extremely fast training on CPUs or standard GPUs.
 - **Simplicity**: Demonstrating the architecture works even with a minimal configuration.
+
